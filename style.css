@@ -106,6 +106,9 @@ a{
     max-width: 300px;
     cursor: pointer;
 }
+.custom-card:hover{
+    box-shadow: 10px 10px 5px rgb(245, 249, 250);
+}
 .cards {
     background-color: #f8f9fa;
 }
@@ -149,10 +152,28 @@ a{
  }
  .custom-card .outil a:nth-child(2){
     border-radius: 0px 5px 5px 0px;
+
   }
   .custom-card .outil a:hover{
-      background-color: gray;
-      color:white;
+      background-color: rgb(252, 84, 84);
+ }
+
+ .custom-card .reating{
+     margin-top: 20px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .custom-card .buy{
+     color: white;
+    width: 100%;
+    padding: 10px 0;
+    border-radius:10px;
+    background: rgb(84, 84, 235);
+    margin-top: 20px;
+ }
+ .heart img{
+     width: 20px;
+     margin-bottom: -5px;
  }
 /* Styles for the custom footer */
 .custom-footer {
