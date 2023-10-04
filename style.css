@@ -1,3 +1,11 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
 /* Styles for the custom header */
 .custom-header {
     background-color: #333;
@@ -15,7 +23,7 @@
 }
 
 .custom-header .custom-logo {
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
 }
@@ -28,10 +36,12 @@
 
 /* Styles for the custom hero section */
 .custom-hero {
-    background-color: #f8f9fa;
+    background-color: white;
     padding: 60px 0;
     text-align: center;
+    height: 170px;
 }
+
 
 .custom-hero .custom-hero-inner {
     max-width: 800px;
@@ -39,16 +49,20 @@
 }
 
 .custom-hero .custom-hero-title {
-    font-size: 36px;
+    font-size: 26px;
+    margin-bottom: 30px;
     color: #333;
 }
 
 .custom-hero .custom-hero-description {
     font-size: 18px;
-    color: #555;
+    color: rgb(128, 126, 126);
 }
 
 /* Styles for the custom buttons */
+.custom-hero .custom-hero-inner .btnnn{
+    margin-top: 40px;
+}
 .custom-btn {
     padding: 10px 20px;
     text-decoration: none;
@@ -90,35 +104,69 @@
     padding: 20px;
     text-align: center;
     max-width: 300px;
+    cursor: pointer;
 }
-
+.cards {
+    background-color: #f8f9fa;
+}
 .custom-card img {
     max-width: 100%;
     height: auto;
+    filter: blur(1px);
+    filter: brightness(50%);
+}
+.custom-card img:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    filter: blur(0px);
 }
 
 .custom-card .custom-card-title {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
-    color: #333;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 80px;
 }
 
 .custom-card .custom-card-description {
     font-size: 16px;
-    color: #555;
+    color: rgb(128, 126, 126);
     margin-bottom: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+.custom-card .outil{
+    display: flex; 
+    justify-content: space-between;
+}
+.custom-card .outil a{
+   border: 1px solid black;
+   padding: 5px;
+}
+.custom-card .outil a:nth-child(1){
+   border-radius: 5px 0 0 5px;
+ }
+ .custom-card .outil a:nth-child(2){
+    border-radius: 0px 5px 5px 0px;
+  }
+  .custom-card .outil a:hover{
+      background-color: gray;
+      color:white;
+ }
 /* Styles for the custom footer */
 .custom-footer {
-    background-color: #333;
-    color: #fff;
+    background-color:white;
+    color: rgb(10, 10, 10);
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
 }
 
 .custom-footer .custom-footer-inner {
     max-width: 1200px;
-    margin: 0 auto;
+    
 }
 
 .custom-footer .custom-footer-text {
